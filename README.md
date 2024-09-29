@@ -1,4 +1,7 @@
-
+RM: 98809 - Gustavo Melo
+RM: 550433 - Guilherme Alves
+RM: 98840 - Carlos Ganzerço
+RM: 551137 - Paulo Lopes
 # Comparação de Dados de Treino Médicos
 
 Este projeto é uma aplicação Python que permite comparar os dados de treino de médicos com base em métricas específicas. A aplicação utiliza um DataFrame do Pandas para armazenar os dados e calcular as diferenças entre os valores de treino de um médico de referência e outros médicos.
