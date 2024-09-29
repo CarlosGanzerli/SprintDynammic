@@ -1,7 +1,7 @@
-RM: 98809 - Gustavo Melo
-RM: 550433 - Guilherme Alves
-RM: 98840 - Carlos Ganzerli
-RM: 551137 - Paulo Lopes
+RM: 98809 - Gustavo Melo<br>
+RM: 550433 - Guilherme Alves<br>
+RM: 98840 - Carlos Ganzerli<br>
+RM: 551137 - Paulo Lopes<br>
 # Comparação de Dados de Treino Médicos
 
 Este projeto é uma aplicação Python que permite comparar os dados de treino de médicos com base em métricas específicas. A aplicação utiliza um DataFrame do Pandas para armazenar os dados e calcular as diferenças entre os valores de treino de um médico de referência e outros médicos.
@@ -57,7 +57,31 @@ relatorio_final = gerar_relatorio()
 print(relatorio_final)
 ```
 
-## Contribuição
+## Metodologia
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-"# SprintDynammic" 
+A aplicação utiliza um conjunto de funções que seguem os seguintes passos:
+
+1. **Coleta de Dados**: Os dados de treino de cada médico são adicionados ao sistema utilizando a função `adicionar_dados_medico`, que armazena informações como tempo de procedimento, precisão e tempo de recuperação.
+   
+2. **Comparação**: A função `comparar_medicos` realiza a comparação direta entre o médico de referência e outros médicos, calculando a diferença entre os valores de treino.
+   
+3. **Análise das Diferenças**: Com a função `calcular_diferencas`, o sistema gera as diferenças de todas as métricas para os médicos comparados com o médico de referência.
+   
+4. **Geração de Relatório**: A função `gerar_relatorio` consolida os dados em um formato tabular para análise posterior.
+
+## Resultados
+
+O sistema consegue gerar, com precisão, as diferenças entre os dados de treino de diferentes médicos, proporcionando uma visão clara das áreas onde cada médico pode ter um desempenho superior ou inferior ao médico de referência. O uso de tabelas facilita a visualização e interpretação dos resultados.
+
+### Exemplo de Resultados:
+```text
+  medico_referencia | medico_comparado | metrica            | valor_referencia | valor_comparado | diferenca
+  -----------------------------------------------------------------------------------------------
+  Medico_A          | Medico_B         | tempo_procedimento | 30               | 35              | 5
+  Medico_A          | Medico_C         | precisao           | 90               | 85              | -5
+  Medico_A          | Medico_D         | tempo_recuperacao  | 7                | 6               | -1
+```
+
+## Conclusão
+
+Este projeto oferece uma solução eficiente para comparar os dados de treino de médicos, ajudando a identificar oportunidades de melhoria e áreas de destaque entre os profissionais. A utilização de `pandas` para manipulação de dados torna o sistema flexível, escalável e fácil de utilizar. O relatório gerado proporciona uma visão consolidada que pode ser útil em contextos de treinamento e avaliação de desempenho clínico.
