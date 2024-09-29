@@ -1,6 +1,6 @@
 RM: 98809 - Gustavo Melo
 RM: 550433 - Guilherme Alves
-RM: 98840 - Carlos Ganzerço
+RM: 98840 - Carlos Ganzerli
 RM: 551137 - Paulo Lopes
 # Comparação de Dados de Treino Médicos
 
